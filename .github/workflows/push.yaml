@@ -8,15 +8,15 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@a37ce9120846195fa4ece8f58b268e6043cb2f26 # v3
         with:
           fetch-depth: 0
       - name: Set up Go
-        uses: actions/setup-go@v3
+        uses: actions/setup-go@be3c94b385c4f180051c996d336f57a34c397495 # v3
         with:
           cache: true
           go-version: ">=1.19.5"
-      - uses: anchore/sbom-action@v0
+      - uses: anchore/sbom-action@e22c389904149dbc22b58101806040fa8d37a610 # v0
         with:
           path: .
           output-file: ./bom.json
@@ -24,7 +24,7 @@ jobs:
           format: cyclonedx-json
       # Transmit a copy of our generated SBOM to Manifest
       - name: Transmit generated SBOM to Manifest
-        uses: manifest-cyber/manifest-github-action@main
+        uses: manifest-cyber/manifest-github-action@6bf8917b77e9d721d7971dfae955b968ab3bd817 # main
         id: transmit
         with:
           apiKey: ${{ secrets.MANIFEST_API_KEY }}
