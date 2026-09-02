@@ -6,10 +6,10 @@ require (
 	github.com/gin-gonic/gin v1.7.7
 	github.com/uptrace/opentelemetry-go-extra/otelgorm v0.1.12
 	go.opentelemetry.io/contrib/instrumentation/github.com/gin-gonic/gin/otelgin v0.31.0
-	go.opentelemetry.io/otel v1.7.0
-	go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.7.0
-	go.opentelemetry.io/otel/sdk v1.7.0
-	go.opentelemetry.io/otel/trace v1.7.0
+	go.opentelemetry.io/otel v1.46.0
+	go.opentelemetry.io/otel/exporters/stdout/stdouttrace v1.46.0
+	go.opentelemetry.io/otel/sdk v1.46.0
+	go.opentelemetry.io/otel/trace v1.46.0
 	gorm.io/driver/sqlite v1.3.2
 	gorm.io/gorm v1.23.5
 )
