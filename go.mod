@@ -1,6 +1,6 @@
 module github.com/SigNoz/sample-golang-app
 
-go 1.17
+go 1.23
 
 require (
 	github.com/gin-gonic/gin v1.7.7
