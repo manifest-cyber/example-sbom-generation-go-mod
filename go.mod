@@ -13,7 +13,7 @@ require (
 	go.opentelemetry.io/otel/sdk v1.7.0
 	go.opentelemetry.io/otel/trace v1.46.0
 	google.golang.org/grpc v1.46.2
-	gorm.io/driver/sqlite v1.3.2
+	gorm.io/driver/sqlite v1.6.0
 	gorm.io/gorm v1.31.2
 )
 
